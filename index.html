@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Exercícios de Funções</title>
+</head>
+<body>
+    <h1> Lista de exercícios de funções </h1>
+
+    <nav>
+        <ul>
+            <li><a href="#exercicio1" id="selExercicio1"> Exercício 1 </a></li>
+            <li><a href="#exercicio2" id="selExercicio2"> Exercício 2 </a></li>
+            <li><a href="#exercicio3" id="selExercicio3"> Exercício 3 </a></li>
+            <li><a href="#exercicio4" id="selExercicio4"> Exercício 4 </a></li>
+            <li><a href="#exercicio5" id="selExercicio5"> Exercício 5 </a></li>
+            <li><a href="#exercicio6" id="selExercicio6"> Exercício 6 </a></li>
+            <li><a href="#exercicio7" id="selExercicio7"> Exercício 7 </a></li>
+            <li><a href="#exercicio8" id="selExercicio8"> Exercício 8 </a></li>
+        </ul>
+    </nav>
+
+    <div class="divExercicio" id="exercicio1" hidden>
+        <section>
+            <h2> Exercício 1 </h2>
+
+            <input type="number" name="valor1" id="valor1" placeholder="Digite o primeiro valor">
+            <input type="number" name="valor2" id="valor2" placeholder="Digite o segundo valor">
+
+            <button class="btnCalcular" id="btn1"> Calcular média </button>
+
+            <label for="" id="resultado1"></label>
+        </section>
+    </div>
+
+    <div class="divExercicio" id="exercicio2" hidden>
+        <section> 
+            <h2> Exercício 2 </h2>          
+
+            <button class="btnCalcular" id="btn2"> Calcular </button>
+
+            <label for="" id="resultado2"></label>
+        </section>
+    </div>
+
+    <div class="divExercicio" id="exercicio3" hidden>
+        <section> 
+            <h2> Exercício 3 </h2>
+
+            <label for="elemento1" class="elemento1"> Digite o valor do primeiro elemento: </label>
+            <input type="number" name="elemento1" id="elemento1" class="elemento1">
+
+            <label for="elemento2" class="elemento2"> Digite o valor do segundo elemento: </label>
+            <input type="number" name="elemento2" id="elemento2" class="elemento2">
+            
+            <label for="elemento3" class="elemento3"> Digite o valor do terceiro elemento: </label>
+            <input type="number" name="elemento3" id="elemento3" class="elemento3">
+
+            <button class="btnCalcular" id="btn3"> Exibir </button>
+
+            <p id="resultado3"></p>
+        </section>
+    </div>
+
+    <div class="divExercicio" id="exercicio4" hidden>
+        <section> 
+            <h2> Exercício 4 </h2>
+
+            <pre>
+                O objeto abaixo será desconstruído e serão criadas as variáveis modelo e processador.
+
+                let dados={
+                    marca:"HP",
+                    modelo:"V15",
+                    config:{
+                    memoria: 8,
+                    processador: "i7"
+                    },
+                }
+            </pre>
+
+            <button class="btnCalcular" id="btn4"> Exibir </button>
+
+            <pre id="resultado4"></pre>
+        </section>
+    </div>
+
+    <div class="divExercicio" id="exercicio5" hidden>
+        <section> 
+            <h2> Exercício 5 </h2>
+
+            <pre>
+                Usando o mesmo objeto do exercício 4, será exibido numa mensagem a marca e o processador 
+                (o segundo conteúdo de um array é solicitado, porém não sei qual array).
+
+                let dados={
+                    marca:"HP",
+                    modelo:"V15",
+                    config:{
+                    memoria: 8,
+                    processador: "i7"
+                    },
+                }
+            </pre>
+
+            <button class="btnCalcular" id="btn5"> Exibir </button>
+
+            <p id="resultado5"></p>
+        </section>
+    </div>
+
+    <div class="divExercicio" id="exercicio6" hidden>
+        <section> 
+            <h2> Exercício 6 </h2>
+
+            <pre>
+                Acrescente ao objeto abaixo uma função exibir() que mostrará pelo “alert” a marca e o
+                processador do objeto, como: “O equipamento é um …”.
+
+                let dados={
+                    marca:"HP",
+                    modelo:"V15",
+                    config:{
+                    memoria: 8,
+                    processador: "i7"
+                    },
+                }
+            </pre>
+
+            <button class="btnCalcular" id="btn6"> Exibir </button>
+
+            <p id="resultado6"></p>
+        </section>
+    </div>
+
+    <div class="divExercicio" id="exercicio7" hidden>
+        <section> 
+            <h2> Exercício 7 </h2>
+
+            <pre>
+                Um objeto novoEquip será criado, contendo os dados do objeto anterior mais as propriedades
+                valorVenda, qtdEstoque.
+
+                let dados={
+                    marca:"HP",
+                    modelo:"V15",
+                    config:{
+                    memoria: 8,
+                    processador: "i7"
+                    },
+                }
+            </pre>
+
+            <button class="btnCalcular" id="btn7"> Exibir </button>
+
+            <p id="resultado7"></p>
+        </section>
+    </div>
+
+    <div class="divExercicio" id="exercicio8" hidden>
+        <section> 
+            <h2> Exercício 8 </h2>
+
+            <pre>
+                O código deve:
+
+                a) Criar o array X contendo os valores 15 e 25 
+                    e o array Y com os valores 12,15,23,43.
+                b) Exibir os valores de y acrescentando um “-“ entre entres.
+                c) Crie o array Z contendo os valores do array X e Y.
+                d) Criar estrutura de repetição com que percorra todos os elementos do array Z. Essa
+                estrutura deve pegar cada elemento e multiplicar por 5 e depois exibir o resultado por meio
+                de uma lista usando o console.log(`${} `)
+            </pre>
+
+            <button class="btnCalcular" id="btn8"> Exibir </button>
+
+            <pre id="resultado8">
+                O código a seguir será exibido estritamente no console, portanto 
+                utilize aa ferramentas de desenvolvedor para visualizá-las.
+            </pre>
+        </section>
+    </div>
+
+
+</body>
+</html>

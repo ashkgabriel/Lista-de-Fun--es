@@ -1,0 +1,44 @@
+body{
+    background-color: beige;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav, ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+li {
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    margin: 5px;
+    display: flex;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: ivory
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.btnCalcular {
+    margin: 10px;
+    background-color: ivory;
+    border-radius: 5px;
+}
+
